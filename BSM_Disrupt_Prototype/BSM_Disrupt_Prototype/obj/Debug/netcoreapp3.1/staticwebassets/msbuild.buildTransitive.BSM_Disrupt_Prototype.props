@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BSM_Disrupt_Prototype.props" />
+</Project>

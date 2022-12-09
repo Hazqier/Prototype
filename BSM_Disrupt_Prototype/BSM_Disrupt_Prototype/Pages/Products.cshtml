@@ -1,0 +1,48 @@
+﻿@page
+@model BSM_Disrupt_Prototype.Pages.ProductsModel
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Products</h1>
+
+<h2>Search</h2>
+<form method="post">
+    <div>Search  <input asp-for="Search" /></div>
+    <button type="submit" asp-page-handler="Search">Submit</button>/>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model.Products)
+        {
+            <tr>
+                <td>@prod.Name</td>
+                <td>@prod.Description</td>
+                <td>@prod.Price.ToString("C")</td>
+                @{
+                    try {
+                        <td>
+                            <img src="@string.Format("data:image/jpg;base64,{0}",
+                                     Convert.ToBase64String(prod.ImageData))" alt="@prod.ImageDescription" />
+                        </td>
+                    } catch {
+                        <td>
+                            <img src="/IMAGES/empty.png" alt="No Image Provided" />
+                        </td>
+                    }
+                }
+            </tr>
+        }
+
+    </tbody>
+</table>

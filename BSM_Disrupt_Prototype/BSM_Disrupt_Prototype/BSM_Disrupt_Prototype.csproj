@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>1081f7df-d922-4db0-bc1f-f9dab607bb80</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="New Folder\" />
+    <None Remove="Pages\" />
+    <None Remove="Pages\BSM_Workshop\" />
+    <None Remove="Data\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Pages\" />
+    <Folder Include="wwwroot\CSS\" />
+    <Folder Include="wwwroot\IMAGES\" />
+    <Folder Include="wwwroot\SCRIPTS\" />
+    <Folder Include="Pages\BSM_Workshop\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\CSS\" />
+    <Content Remove="wwwroot\IMAGES\" />
+    <Content Remove="wwwroot\SCRIPTS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.31" />
+  </ItemGroup>
+</Project>

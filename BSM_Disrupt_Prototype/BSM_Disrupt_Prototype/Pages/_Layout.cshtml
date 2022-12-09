@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <a asp-page="/Index">Home</a>
+        <a asp-page="/Contact">Contact</a>
+        <a asp-page="/BSM_Workshop/Create">Create</a>
+        <a asp-page="/Products">Products</a>
+        @RenderBody()
+    </div>
+</body>
+</html>

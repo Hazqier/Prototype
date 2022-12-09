@@ -1,0 +1,23 @@
+﻿@page
+@model BSM_Disrupt_Prototype.Pages.BSM_Workshop.CreateModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<h1>Create - Add BSM Products</h1>
+<p> Enter details of the product:</p>
+
+<form method="post" enctype="multipart/form-data">
+    <div>Name:  <input asp-for="Prod.Name" /></div>
+    <div>Price:  <input asp-for="Prod.Price" /></div>
+    <div>Description:  <input asp-for="Prod.Description" /></div>
+    <div>Image Description <input asp-for="Prod.Description" /></div>
+    <div>
+        Upload Image:<br />
+        <input type="file" id="file1"
+               name="file1"
+               multiple="multiple" />
+    </div>
+    <input type="submit" />
+</form>
