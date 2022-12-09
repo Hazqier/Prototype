@@ -7,7 +7,8 @@ Before running, make sure to install the nessesary packages:
 2. Click "Manage NuGet Packages...".
 3. Then install "Microsoft.EntityFrameworkCore.SqlServer" version 3.1.31.
 
-<img width="892" alt="Screenshot 2022-12-10 at 00 03 51" src="https://user-images.githubusercontent.com/56122446/206745412-4c017db9-7aee-43a1-941a-1dab8c484110.png">
+<img width="584" alt="Screenshot 2022-12-10 at 00 18 41" src="https://user-images.githubusercontent.com/56122446/206745861-04c9301f-2f82-4db6-8061-7b93ce1f4656.png">
+
 
 For the database, it is currently using MSSQL, running on a localhost network using Docker. If you want to test out the web app, then you can create your own localhost database on your laptop using Docker and it should immediately work.
 
