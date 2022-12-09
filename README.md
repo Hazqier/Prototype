@@ -20,7 +20,7 @@ Context for the application database can be seen under "appsettings.json" file:
 "Server=localhost;Database=master;User=sa;Password=reallyStrongPwd123;"
 
 After creating the localhost database, make sure to create the Product Table. The SQL Query is provided:
-"BSM_DB.sql" file.
+"BSM_DB.sql" file. You can insert the query into the database using either SSMS (SQL Server Management Studio) for Windows, or Azure Data Studio for GNU/Linux and MacOS.
 
 
 
