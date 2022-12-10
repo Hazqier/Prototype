@@ -7,11 +7,15 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using BSM_Disrupt_Prototype.Data;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace BSM_Disrupt_Prototype.Pages.BSM_Workshop
 {
 	public class ManageProductsModel : PageModel
     {
+
+        public NumberFormatInfo myNumberFormatInfo = new CultureInfo("ms-BN", false).NumberFormat; // Currency Format for Brunei Dollar.
+
         private readonly AppDbContext _db;
         public ManageProductsModel(AppDbContext db)
         {

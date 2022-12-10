@@ -78,3 +78,9 @@
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/CreateProducts.cshtml.g.cs
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/ManageProducts.cshtml.g.cs
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/EditProducts.cshtml.g.cs
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll

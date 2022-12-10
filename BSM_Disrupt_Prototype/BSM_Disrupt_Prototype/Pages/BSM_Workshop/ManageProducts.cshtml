@@ -32,7 +32,7 @@
                 <tr>
                     <td>@prod.Name</td>
                     <td>@prod.Description</td>
-                    <td>@prod.Price.ToString("C")</td>
+                    <td>@prod.Price.ToString("C", Model.myNumberFormatInfo)</td>
                     <td>@prod.SerialNumber</td>
                     <td>@prod.Active</td>
                     @{
