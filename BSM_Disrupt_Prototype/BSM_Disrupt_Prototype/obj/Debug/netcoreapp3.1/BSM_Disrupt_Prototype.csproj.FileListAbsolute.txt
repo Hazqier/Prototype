@@ -64,8 +64,6 @@
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/BSM_Disrupt_Prototype.TagHelpers.input.cache
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/BSM_Disrupt_Prototype.TagHelpers.output.cache
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/BSM_Disrupt_Prototype.RazorCoreGenerate.cache
-/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/Create.cshtml.g.cs
-/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/Contact.cshtml.g.cs
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
@@ -77,3 +75,6 @@
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/BSM_Disrupt_Prototype.pdb
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/BSM_Disrupt_Prototype.genruntimeconfig.cache
 /Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/Products.cshtml.g.cs
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/CreateProducts.cshtml.g.cs
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/ManageProducts.cshtml.g.cs
+/Users/lortnoc/Projects/BSM_Disrupt_Prototype/BSM_Disrupt_Prototype/obj/Debug/netcoreapp3.1/Razor/Pages/BSM_Workshop/EditProducts.cshtml.g.cs

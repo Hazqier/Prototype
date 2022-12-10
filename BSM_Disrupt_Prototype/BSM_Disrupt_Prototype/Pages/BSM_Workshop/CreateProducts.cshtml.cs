@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BSM_Disrupt_Prototype.Pages.BSM_Workshop
 {
-	public class CreateModel : PageModel
+	public class CreateProductsModel : PageModel
     {
 
         private AppDbContext _db;
@@ -17,7 +17,7 @@ namespace BSM_Disrupt_Prototype.Pages.BSM_Workshop
         [BindProperty]
         public Products Prod { get; set; }
 
-        public CreateModel(AppDbContext db)
+        public CreateProductsModel(AppDbContext db)
         {
             _db = db;
         }
@@ -38,7 +38,7 @@ namespace BSM_Disrupt_Prototype.Pages.BSM_Workshop
 
             _db.Products.Add(Prod);
             await _db.SaveChangesAsync();
-            return RedirectToPage("/BSM_Workshop/Create");
+            return RedirectToPage("/BSM_Workshop/CreateProducts");
         }
 
         public void OnGet()

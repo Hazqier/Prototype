@@ -1,0 +1,61 @@
+﻿@page
+@model BSM_Disrupt_Prototype.Pages.BSM_Workshop.ManageProductsModel
+@{
+    ViewData["Title"] = "ManageProducts";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<h1>BSM Workshop Example 1</h1>
+
+<h2>Products</h2>
+
+<h3>Search</h3>
+<form method="post">
+    <div>Search  <input asp-for="Search" /></div>
+    <button type="submit" asp-page-handler="Search">Submit</button>/>
+</form>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Serial Number</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prod in Model.Products)
+            {
+                <tr>
+                    <td>@prod.Name</td>
+                    <td>@prod.Description</td>
+                    <td>@prod.Price.ToString("C")</td>
+                    <td>@prod.SerialNumber</td>
+                    <td>@prod.Active</td>
+                    @{
+                        try
+                        {
+                            <td>
+                                <img src="@string.Format("data:image/jpg;base64,{0}",
+                                     Convert.ToBase64String(prod.ImageData))" alt="@prod.ImageDescription" />
+                            </td>
+                        }
+                        catch
+                        {
+                            <td>
+                                <img src="/IMAGES/empty.png" alt="No Image Provided" />
+                            </td>
+                        }
+                    }
+                <td>
+                    <a asp-page="/BSM_Workshop/EditProducts" asp-route-id="@prod.ID">edit</a>.
+                    <button type="submit" asp-page-handler="Delete" asp-route-itemID="@prod.ID">delete</button>
+                </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>

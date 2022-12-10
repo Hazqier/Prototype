@@ -1,0 +1,40 @@
+﻿@page
+@model BSM_Disrupt_Prototype.Pages.BSM_Workshop.EditProductsModel
+@{
+    ViewData["Title"] = "EditProducts";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<h2>Edit Item - @Model.Item.Name</h2>
+
+<form method="post">
+    <div>
+        <h3>Item:</h3>
+        <div>
+            <input asp-for="Item.ID" type="hidden"/>
+
+            <label>Name</label>
+            <div><input asp-for="Item.Name"/></div>
+
+            <label>Price</label>
+            <div><input asp-for="Item.Price"/></div>
+
+            <label>Description</label>
+            <div><input asp-for="Item.Description"/></div>
+
+            <label>Image Description</label>
+            <div><input asp-for="Item.ImageDescription"/></div>
+
+            <input asp-for="Item.ImageData" type="hidden"/>
+
+            <label>Serial Number</label>
+            <div><input asp-for="Item.SerialNumber"/></div>
+
+            <input asp-for="Item.Active" type="hidden"/>
+        </div>
+    </div>
+    <div>
+        <button type="submit" asp-page-handler="Save">Save</button>
+    </div>
+</form>
+

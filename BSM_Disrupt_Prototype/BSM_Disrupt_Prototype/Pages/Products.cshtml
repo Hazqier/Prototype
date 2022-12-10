@@ -6,12 +6,14 @@
 }
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<h1>Products</h1>
+<h1>BSM Workshop Example 1</h1>
 
-<h2>Search</h2>
+<h2>Products</h2>
+
+<h3>Search</h3>
 <form method="post">
     <div>Search  <input asp-for="Search" /></div>
-    <button type="submit" asp-page-handler="Search">Submit</button>/>
+    <button type="submit" asp-page-handler="Search">Submit</button>
 </form>
 
 <table class="table">
@@ -30,12 +32,15 @@
                 <td>@prod.Description</td>
                 <td>@prod.Price.ToString("C")</td>
                 @{
-                    try {
+                    try
+                    {
                         <td>
                             <img src="@string.Format("data:image/jpg;base64,{0}",
                                      Convert.ToBase64String(prod.ImageData))" alt="@prod.ImageDescription" />
                         </td>
-                    } catch {
+                    }
+                    catch
+                    {
                         <td>
                             <img src="/IMAGES/empty.png" alt="No Image Provided" />
                         </td>

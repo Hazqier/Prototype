@@ -23,13 +23,13 @@ namespace BSM_Disrupt_Prototype.Pages
 
         public void OnGet()
         {
-            Products = _db.Products.FromSqlRaw("SELECT * FROM Products").ToList();
+            Products = _db.Products.FromSqlRaw("SELECT * FROM Products WHERE Active = 1").ToList();
         }
 
         public IActionResult OnPostSearch()
         {
             Products = _db.Products
-                .FromSqlRaw("SELECT * FROM Products WHERE Name LIKE '" + Search + "%'")
+                .FromSqlRaw("SELECT * FROM Products WHERE Active = 1 AND Name LIKE '" + Search + "%'")
                 .ToList();
             return Page();
         }
